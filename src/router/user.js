@@ -3,6 +3,7 @@ const UserAddress = () => import('@/views/user/module-address');
 const UserAddressEdit = () => import('@/views/user/module-address-edit');
 const UserOrderList = () => import('@/views/user/order-list');
 const Tabbar = () => import('@/components/Tabbar/');
+const ChaDingDan = () => import('@/views/user/index');
 
 export default [
   {
@@ -74,10 +75,21 @@ export default [
     path: '/user/order/list/:active',
     name: 'user-order-list',
     meta: {
-       login: true,
+      login: true,
       title: '全部订单'
     },
     props: true,
     component: UserOrderList
+  },
+  // //yc物流信息
+  {
+    path: '/user/order/chaDingDan',
+    name: 'chaDingDan',
+    props: true,
+    meta: {
+      login: true,
+      title: '物流信息'
+    },
+    component: ChaDingDan
   }
 ];

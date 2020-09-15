@@ -9,9 +9,9 @@ export default [
       title: '购物车',
       keepAlive: true
     },
-    components: { 
-      default: () => import('@/views/order/tabbar-cart'), 
-      tabbar: Tabbar 
+    components: {
+      default: () => import('@/views/order/tabbar-cart'),
+      tabbar: Tabbar
     }
   },
   {

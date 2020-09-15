@@ -295,7 +295,6 @@ export function payWayChange(params) {
   });
 }
 
-
 // 支付宝支付
 export function aliPay(params) {
   return request({
@@ -311,5 +310,14 @@ export function cashPay(data) {
     url: 'pay_success/' + data.orderid,
     method: 'put',
     data
-  })
+  });
+}
+
+// 物流信息
+export function chaDingDan(params) {
+  return request({
+    url: 'chaDingDan',
+    method: 'get',
+    params
+  });
 }

@@ -9,10 +9,13 @@ import '@/assets/scss/iconfont/iconfont.css';
 import VueCountdown from '@chenfengyuan/vue-countdown';
 
 import filters from '@/filter';
+import { Step, Steps } from 'vant';
+
+Vue.use(Step);
+Vue.use(Steps);
 
 Vue.component(VueCountdown.name, VueCountdown);
 Vue.use(filters);
-
 
 import { Lazyload, Icon, Cell, CellGroup, loading, Button, Toast } from 'vant';
 Vue.use(Icon);
@@ -29,7 +32,6 @@ Vue.use(Lazyload, {
   listenEvents: ['scroll'],
   lazyComponent: true
 });
-
 
 Vue.config.productionTip = false;
 
